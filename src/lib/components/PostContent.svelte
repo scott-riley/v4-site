@@ -99,11 +99,11 @@
 			font-family: 'Geist Pixel', sans-serif;
 			font-size: var(--step-0);
 			letter-spacing: 0.2px;
-			--webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 			line-height: 1.5;
 			sup {
 				font-size: var(--step--2);
+				--webkit-font-smoothing: subpixel-antialiased;
+				-moz-osx-font-smoothing: none;
 			}
 			a {
 				font-style: normal;

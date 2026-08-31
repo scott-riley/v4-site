@@ -1,9 +1,7 @@
 ---
 title: "Scott.is v4 – personal websites babeyyy"
 image:
-  "guillotine.png"
-og: "/guillotine-og.png"
-tags: ["featured"]
+  "gb.png"
 pubDate: "2026-08-31"
 description: "As summer shifts to autumn in a deluge of thunderstorms here in the north of England, I’m reminded that change is perpetual and unavoidable."
 readingTime: "17 min"
@@ -42,9 +40,11 @@ And this is something I’m noticing more and more; something that rekindles tha
 
 When our so–called ‘social media’ is as divergent and as unfit for purpose as it is right now (seriously, what are the options? Argue with Third Reich Robots and MAGA-pilled paedophiles on X? Pray that Bluesky doesn’t fall apart? Try and navigate the deep gloomy woods of sanctimonious sentient neckbeards that is Mastodon?); when the very concept that there’s a ‘home’ to be found on the web has eroded unfathomably; it’s still so fucking cool that we can just type into a text editor and build that home for ourselves.
 
-People have always made weird shit as acts of rebellion and resistance. Some of them become entire movements. The impressionists saw the art world descend into increasingly hyperrealistic portraits of cousin-fucking nobility and say ‘nah lads, here’s a fucking boat on a river comprised entirely of seventeen brush strokes, go fuck yourselves (and/or your cousin I guess)’<sup>[citation needed]</sup>. Grunge pushed back against an era of sterile, puerile, sexist cock rock with raw, unpolished, deeply evocative noise. Stravisnky made a thousand people shit themselves<sup>[citation needed]</sup> and riot because he didn’t want to write a ‘proper’ ballet.
+People have always made weird shit as acts of rebellion and resistance. Some of them become entire movements. 
 
-Now, I’m not saying one person building a little homepage is equivalent to composing The Rite of Spring, but it can be imbued with the same sense of ‘fuck you’–ism. As the industry devolves into a clusterfuck of copycat slop, as folk literally feed prompts into mediocrity machines and content themselves with being exuberantly average, as the nightmarish ghouls at the top of the pyramid use their infinite money and influence to force an entire industry down a path of irredeemable mundanity, simply BUILDING WEIRD SHIT feels like an act of resistance.
+The impressionists saw the art world descend into increasingly hyperrealistic portraits of cousin-fucking nobility and say ‘nah lads, here’s a boat on a river comprised entirely of seventeen brush strokes, go fuck yourselves (and/or your cousin I guess.)’<sup>[citation needed]</sup> Grunge pushed back against an era of sterile, puerile, sexist cock rock with raw, unpolished, deeply evocative noise. Stravisnky made a thousand people shit themselves<sup>[citation needed]</sup> and riot because he didn’t want to write a ‘proper’ ballet.
+
+Now, I’m not saying one person building a little homepage is equivalent to composing The Rite of Spring or Impression Soleil Levant or Ten, but it can be imbued with the same sense of ‘fuck you’–ism. As the industry devolves into a clusterfuck of copycat slop, as folk literally feed prompts into mediocrity machines and content themselves with being exuberantly average, as the nightmarish ghouls at the top of the pyramid use their infinite money and influence to force an entire industry down a path of irredeemable mundanity, simply BUILDING WEIRD SHIT feels like an act of resistance.
 
 ## Home is where you make it
 So, this is my new home on the Web. The old one was a bit of a shitshow, all things considered, because it was basically one wall with a photo of myself and my dog on it. Now I have rooms and corridors and there’ll alway be somewhere that can contain my silly little ideas—the weird shit that doesn’t really make sense to live anywhere else.
