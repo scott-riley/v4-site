@@ -268,6 +268,9 @@
 		background-repeat: no-repeat;
 		background-size: 25%;
 		height: calc(100vh - 44px);
+		:global([data-theme='dark']) & {
+			background-image: url('/horns-dark.png');
+		}
 	}
 	.icon-bar {
 		display: flex;

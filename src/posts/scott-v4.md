@@ -4,7 +4,7 @@ image:
   "gb.png"
 pubDate: "2026-08-31"
 description: "As summer shifts to autumn in a deluge of thunderstorms here in the north of England, I’m reminded that change is perpetual and unavoidable."
-readingTime: "17 min"
+readingTime: "11 min"
 ---
 
 As summer shifts to autumn in a deluge of thunderstorms here in the north of England, I’m reminded that change is perpetual and unavoidable, and how bewilderingly craven it can feel at times to strive for stasis. Change energises as much as it buffets. Entropy is as fundamental as gravity.
@@ -48,6 +48,8 @@ Now, I’m not saying one person building a little homepage is equivalent to com
 
 ## Home is where you make it
 So, this is my new home on the Web. The old one was a bit of a shitshow, all things considered, because it was basically one wall with a photo of myself and my dog on it. Now I have rooms and corridors and there’ll alway be somewhere that can contain my silly little ideas—the weird shit that doesn’t really make sense to live anywhere else.
+
+I have a silly little ‘game’ here where you can beat up an LLM with my dog. I’ve got a whole host of bastardised ‘not-quite-retro’ windows, a barely-functioning music player. I’ve even got my own somehow more terrifying version of Clippy. None of it is for any other reason that I think it’s cool and fun and because I wanted to try and build it.
 
 I could write about how I built this, but honestly, that shit doesn’t interest me at all, and you can see all the code yourself anyway. What I would much prefer, is that some of this resonates with you, dear reader. 
 
