@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 	let { posts, externalPosts } = $props();
 	let showGrid = $state(false);
 	const formatShortDate = (dateStr) =>
@@ -23,7 +24,11 @@
 					<div class="item-icon">
 						<i class="fa-pixel fa-regular fa-file"></i>
 					</div>
-					<a class="item-name" href={`/writing/about/${post.slug}`}>{post.title}</a>
+					<a
+						class="item-name"
+						href={`/writing/about/${post.slug}`}
+						onclick={goto(`/writing/about/${post.slug}`)}>{post.title}</a
+					>
 				</div>
 				<div class="item-meta">
 					<span class="reading-time">{post.readingTime}</span>
@@ -45,7 +50,11 @@
 					<div class="item-icon">
 						<i class="fa-pixel fa-regular fa-file"></i>
 					</div>
-					<a class="item-name" href={`/writing/for/${post.slug}`}>{post.title}</a>
+					<a
+						class="item-name"
+						href={`/writing/for/${post.slug}`}
+						onclick={goto(`/writing/for/${post.slug}`)}>{post.title}</a
+					>
 				</div>
 				<div class="for">for {post.pub}</div>
 			</div>
