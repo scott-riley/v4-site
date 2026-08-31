@@ -59,7 +59,6 @@
 		if (e.animationName.endsWith('wipe-out')) {
 			showWipe = false;
 			wipeEl.removeEventListener('animationend', handleWipeEnd);
-			// battle scene is now fully revealed — start battle logic here
 		}
 	}
 
@@ -73,7 +72,7 @@
 	let enemyEl;
 
 	function die(who) {
-		if (dyingWho) return; // already dying, ignore
+		if (dyingWho) return;
 		dyingWho = who;
 		const el = who === 'player' ? playerEl : enemyEl;
 		cryEffect.currentTime = 0;

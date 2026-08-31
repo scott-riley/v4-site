@@ -82,11 +82,11 @@
 					<span>home</span>
 					<HappyText />
 				</a>
-				<a class="desktop-icon" href="/writing">
+				<a class="desktop-icon" href="/writing" onclick={(e) => appNavigate('/writing', e)}>
 					<span>writing</span>
 					<Book />
 				</a>
-				<a href="/chatting" class="desktop-icon">
+				<a href="/chatting" class="desktop-icon" onclick={(e) => appNavigate('/chatting', e)}>
 					<span>say hi!</span>
 					<Mail />
 				</a>
@@ -114,11 +114,11 @@
 	<div class="desktop-icons">
 		<div class="icon-bar">
 			<div class="icon-group">
-				<button class="desktop-icon" onclick={() => (showAbout = true)}>
+				<a class="desktop-icon" href="/" onclick={(e) => appNavigate('/', e)}>
 					<HappyText />
 					<span>home</span>
 				</button>
-				<a class="desktop-icon" href="/writing">
+				<a class="desktop-icon" href="/writing" onclick={(e) => appNavigate('/writing', e)}>
 					<Book />
 					<span>writing</span>
 				</a>
