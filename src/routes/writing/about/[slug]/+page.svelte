@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>{data.meta.title}</title>
+	<title>{data?.meta?.title}</title>
 </svelte:head>
 
 <Desktop
@@ -24,13 +24,13 @@
 	</Window>
 
 	<Window
-		filename={data.meta.title}
+		filename={data?.meta?.title}
 		initX={260}
 		initY={10}
 		large
 		post
 		onClose={() => goto('/writing')}
 	>
-		<PostContent meta={data.meta} html={data.html} />
+		<PostContent meta={data?.meta} html={data?.html} />
 	</Window>
 </Desktop>

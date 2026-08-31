@@ -1,38 +1,37 @@
 import matter from 'gray-matter';
+import { marked } from 'marked';
 
-const postFiles = import.meta.glob('/src/posts/*.md', {
+const postModules = import.meta.glob('/src/posts/*.md', {
 	eager: true,
 	query: '?raw',
 	import: 'default'
 });
 
-const externalPostFiles = import.meta.glob('/src/external-posts/*.md', {
-	eager: true,
-	query: '?raw',
-	import: 'default'
-});
-
-function parsePosts(files) {
-	return Object.entries(files).map(([filename, raw]) => {
-		const { data } = matter(raw);
-
-		return {
-			slug: filename.split('/').pop().replace(/\.md$/, ''),
-			...data
-		};
+function parsePosts(modules) {
+	return Object.entries(modules).map(([path, raw]) => {
+		const { data, content } = matter(raw);
+		console.log('parsed frontmatter:', data);
+		const slug = path.split('/').pop().replace('.md', '');
+		return { slug, ...data, content };
 	});
 }
 
 export function getAllPosts() {
-	const posts = parsePosts(postFiles);
-
-	const sorted = posts.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-
-	console.log(sorted.map((p) => [p.slug, p.pubDate]));
-
-	return sorted;
+	return parsePosts(postModules).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
 
+export function getPostBySlug(slug) {
+	const post = getAllPosts().find((p) => p.slug === slug);
+	if (!post) return null;
+	return { ...post, html: marked(post.content) };
+}
+
+const externalPostModules = import.meta.glob('/src/external-posts/*.md', {
+	eager: true,
+	query: '?raw',
+	import: 'default'
+});
+
 export function getAllExternalPosts() {
-	return parsePosts(externalPostFiles);
+	return parsePosts(externalPostModules).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
