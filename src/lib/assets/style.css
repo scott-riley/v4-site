@@ -1,0 +1,260 @@
+@font-face {
+	font-family: 'Argent Pixel';
+	src: url('/fonts/ArgentPixel-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Argent Pixel';
+	src: url('/fonts/ArgentPixel-RegularItalic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* @link https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+	--step--2: clamp(0.7813rem, 0.7736rem + 0.0341vw, 0.8rem);
+	--step--1: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+	--step-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+	--step-1: clamp(1.35rem, 1.2631rem + 0.3864vw, 1.5625rem);
+	--step-2: clamp(1.62rem, 1.4837rem + 0.6057vw, 1.9531rem);
+	--step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
+	--step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
+	--step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+}
+
+/* @link https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+	--space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+	--space-2xs: clamp(0.5625rem, 0.5369rem + 0.1136vw, 0.625rem);
+	--space-xs: clamp(0.875rem, 0.8494rem + 0.1136vw, 0.9375rem);
+	--space-s: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
+	--space-m: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
+	--space-l: clamp(2.25rem, 2.1477rem + 0.4545vw, 2.5rem);
+	--space-xl: clamp(3.375rem, 3.2216rem + 0.6818vw, 3.75rem);
+	--space-2xl: clamp(4.5rem, 4.2955rem + 0.9091vw, 5rem);
+	--space-3xl: clamp(6.75rem, 6.4432rem + 1.3636vw, 7.5rem);
+
+	/* One-up pairs */
+	--space-3xs-2xs: clamp(0.3125rem, 0.1847rem + 0.5682vw, 0.625rem);
+	--space-2xs-xs: clamp(0.5625rem, 0.4091rem + 0.6818vw, 0.9375rem);
+	--space-xs-s: clamp(0.875rem, 0.7216rem + 0.6818vw, 1.25rem);
+	--space-s-m: clamp(1.125rem, 0.8182rem + 1.3636vw, 1.875rem);
+	--space-m-l: clamp(1.6875rem, 1.3551rem + 1.4773vw, 2.5rem);
+	--space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
+	--space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
+	--space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
+
+	/* Custom pairs */
+	--space-s-l: clamp(1.125rem, 0.5625rem + 2.5vw, 2.5rem);
+
+	--color-text: black;
+	--color-text-muted: #444;
+	--color-bg-muted: #fefefe;
+	--color-bg-accent: white;
+	--color-border: black;
+	--color-shadow-solid: rgba(0, 0, 0, 0.1);
+	--color-underline: rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme='dark'] {
+	--color-text: #91ac90;
+	--color-text-muted: #91ac90;
+	--color-bg-muted: #182021;
+	--color-bg-accent: #121a1b;
+	--color-border: rgba(255, 255, 255, 0.2);
+	--color-shadow-solid: rgba(0, 0, 0, 0.3);
+	--color-underline: rgba(255, 255, 255, 0.4);
+}
+
+.text-document {
+	padding: var(--space-m);
+}
+
+.scanlines::after {
+	background: rgba(15, 56, 15, 0.56);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	pointer-events: none;
+	z-index: 999;
+}
+
+.scanlines::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: repeating-linear-gradient(
+		0deg,
+		transparent,
+		transparent 2px,
+		rgba(0, 0, 0, 0.15) 2px,
+		rgba(0, 0, 0, 0.15) 3px
+	);
+	pointer-events: none;
+	z-index: 10;
+	animation: crt-scanline-flicker 0.08s steps(2) infinite;
+}
+
+.game-screen.scanlines::before,
+.game-screen.scanlines::after {
+	bottom: -28px;
+}
+
+.ascii.scanlines {
+	position: relative;
+	background: white;
+}
+
+[data-theme='dark'] .icon svg path {
+	fill: var(--color-text);
+}
+
+[data-theme='light'] .ascii.scanlines:before,
+[data-theme='light'] .ascii.scanlines:after {
+	display: none;
+}
+
+[data-theme='dark'] .ascii.scanlines img {
+	filter: contrast(2);
+}
+
+/* THX! https://deloughry.co.uk/field-notes/building-glitch-effects-with-css/ */
+@keyframes crt-scanline-flicker {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.62;
+	}
+}
+
+* {
+	box-sizing: border-box;
+	transition: all 0.4s ease;
+}
+
+body {
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures contextual;
+	font-family: 'Argent Pixel', serif;
+	font-family: 'Geist Pixel', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+	padding: 0;
+	margin: 0;
+	color: var(--color-text);
+	font-size: var(--step-0);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	cursor:
+		url('https://pixelarticons.com/free/cursors/default-dark.png') 4 1,
+		auto;
+}
+
+p {
+	line-height: 1.45;
+}
+
+button,
+.button,
+a {
+	cursor:
+		url('https://pixelarticons.com/free/cursors/pointer.png') 4 1,
+		auto;
+}
+
+.folder {
+	.folder-item {
+		@media (max-width: 900px) {
+			margin-top: var(--space-s);
+			margin-bottom: var(--space-s);
+		}
+	}
+	.folder-header {
+		padding: var(--space-2xs) var(--space-xs);
+		border-bottom: 1px solid var(--color-border);
+		border-top: 1px solid var(--color-border);
+		display: flex;
+		align-items: center;
+		font-size: var(--step--1);
+		&:first-child {
+			border-top: none;
+		}
+		.folder-name {
+			display: flex;
+			align-items: center;
+			gap: var(--space-2xs);
+		}
+		h2 {
+			font-size: var(--step--1);
+			font-weight: normal;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.folder-content {
+		padding: var(--space-3xs);
+		.item-details,
+		.item-meta {
+			display: flex;
+			align-items: center;
+			gap: var(--space-2xs);
+			a {
+				text-decoration: none;
+				font-style: normal;
+				transition: none;
+				&:hover {
+					text-decoration: underline;
+					text-decoration-color: var(--color-border);
+					text-decoration-thickness: 2px;
+				}
+			}
+			@media (max-width: 900px) {
+				align-items: start;
+			}
+		}
+		.item-meta {
+			flex-grow: 1;
+			flex-basis: 0;
+			justify-content: end;
+			& > * {
+				text-align: right;
+				width: 86px;
+			}
+			@media (max-width: 900px) {
+				display: none;
+			}
+		}
+		.for {
+			@media (max-width: 900px) {
+				display: none;
+			}
+		}
+		.folder-item {
+			padding: var(--space-2xs);
+			display: flex;
+			gap: var(--space-xs);
+			font-size: var(--step--1);
+			justify-content: space-between;
+		}
+	}
+}
+
+.post {
+	article {
+		padding: var(--space-m);
+		@media (max-width: 900px) {
+			padding: var(--space-xs);
+		}
+	}
+}
