@@ -117,7 +117,7 @@
 				<a class="desktop-icon" href="/" onclick={(e) => appNavigate('/', e)}>
 					<HappyText />
 					<span>home</span>
-				</button>
+				</a>
 				<a class="desktop-icon" href="/writing" onclick={(e) => appNavigate('/writing', e)}>
 					<Book />
 					<span>writing</span>
