@@ -53,25 +53,28 @@
 		}
 	}
 	article {
-		font-family: 'Argent Pixel', serif;
+		font-family: 'Geist Pixel', sans-serif;
 		.inner-content {
-			max-width: 66%;
+			max-width: 60ch;
 			margin: auto;
 			@media (max-width: 900px) {
 				max-width: 90%;
 			}
 		}
 		h1 {
+			font-family: 'Argent Pixel', serif;
 			font-weight: normal;
 			font-size: var(--step-5);
 			text-align: center;
 		}
 		:global h2 {
+			font-family: 'Argent Pixel', serif;
 			font-weight: normal;
 			font-size: var(--step-3);
 			margin-bottom: var(--size-m);
 		}
 		:global h3 {
+			font-family: 'Argent Pixel', serif;
 			font-weight: normal;
 			font-size: var(--step-2);
 			margin-bottom: var(--size-m);
@@ -80,6 +83,7 @@
 			font-family: 'Argent Pixel', serif;
 			font-size: var(--step-1);
 			margin-bottom: 2rem;
+			line-height: 1.3;
 			@media (min-width: 740px) {
 				&::first-letter {
 					font-size: 7rem;
@@ -93,6 +97,14 @@
 		}
 		:global p {
 			font-family: 'Geist Pixel', sans-serif;
+			font-size: var(--step-0);
+			letter-spacing: 0.2px;
+			--webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			line-height: 1.5;
+			sup {
+				font-size: var(--step--2);
+			}
 			a {
 				font-style: normal;
 			}

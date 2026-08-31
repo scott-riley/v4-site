@@ -10,6 +10,9 @@
 
 <svelte:head>
 	<title>{data?.meta?.title}</title>
+	<meta property="og:title" content={data?.meta?.title} />
+	<meta property="og:image" content="https://v4-site.pages.dev/og.png" />
+	<meta property="og:description" content={data.meta.description} />
 </svelte:head>
 
 <Desktop

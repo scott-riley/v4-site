@@ -38,3 +38,31 @@ export function getAllExternalPosts() {
 export function getExternalPostBySlug(slug) {
 	return getAllExternalPosts().find((p) => p.slug === slug) ?? null;
 }
+
+const projectModules = import.meta.glob('/src/projects/*.md', {
+	eager: true,
+	query: '?raw',
+	import: 'default'
+});
+
+export function getAllProjects() {
+	return parsePosts(projectModules);
+}
+
+export function getProjectBySlug(slug) {
+	return getAllProjects().find((p) => p.slug === slug) ?? null;
+}
+
+const featuresModules = import.meta.glob('/src/features/*.md', {
+	eager: true,
+	query: '?raw',
+	import: 'default'
+});
+
+export function getAllFeatures() {
+	return parsePosts(featuresModules);
+}
+
+export function getFeatureBySlug(slug) {
+	return getAllFeatures().find((p) => p.slug === slug) ?? null;
+}

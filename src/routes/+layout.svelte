@@ -16,6 +16,7 @@
 		rel="stylesheet"
 	/>
 	<script src="https://kit.fontawesome.com/1467108498.js" crossorigin="anonymous"></script>
+
 	<title>Scott is… making fun shit</title>
 </svelte:head>
 

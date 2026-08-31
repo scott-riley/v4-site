@@ -239,6 +239,9 @@
 				width: 100%;
 			}
 		}
+		&.browserWindow {
+			max-width: 1140px;
+		}
 		&.player {
 			width: 66vw;
 			max-width: 720px;

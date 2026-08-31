@@ -2,8 +2,8 @@
 	import { goto } from '$app/navigation';
 	import Desktop from '$lib/components/Desktop.svelte';
 	import Window from '$lib/components/Window.svelte';
-	import ContactForm from '$lib/components/ContactForm.svelte';
-	let { form } = $props();
+	import Professional from '$lib/components/Professional.svelte';
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -15,13 +15,13 @@
 
 <Desktop
 	initialAbout={false}
-	initialScott={true}
-	initialLorna={true}
+	initialScott={false}
+	initialLorna={false}
 	initialMD={false}
 	initialCourse={false}
-	initialEmail={true}
+	initialEmail={false}
 >
-	<Window filename="contact" initX={140} initY={20} large onClose={() => goto('/')}>
-		<ContactForm {form} />
+	<Window filename="professional" initX={140} initY={20} large post onClose={() => goto('/')}>
+		<Professional projects={data.projects} features={data.features} />
 	</Window>
 </Desktop>

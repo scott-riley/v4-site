@@ -5,6 +5,7 @@ image:
 og: "/guillotine-og.png"
 tags: ["featured"]
 pubDate: "2026-08-31"
+description: "As summer shifts to autumn in a deluge of thunderstorms here in the north of England, I’m reminded that change is perpetual and unavoidable."
 readingTime: "17 min"
 ---
 

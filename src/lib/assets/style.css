@@ -227,9 +227,15 @@ a {
 			flex-grow: 1;
 			flex-basis: 0;
 			justify-content: end;
+			.reversed & {
+				gap: var(--space-m);
+			}
 			& > * {
 				text-align: right;
 				width: 86px;
+			}
+			.reversed & > * {
+				width: auto;
 			}
 			@media (max-width: 900px) {
 				display: none;

@@ -8,11 +8,14 @@
 
 <svelte:head>
 	<title>Scott is… writing</title>
+	<meta property="og:image" content="https://v4-site.pages.dev/og.png" />
+	<meta property="og:title" content="Scott is… writing" />
+	<meta property="og:description" content="Musings on tech, design, and the Web." />
 </svelte:head>
 
 <Desktop
 	initialAbout={false}
-	initialScott={true}
+	initialScott={false}
 	initialLorna={true}
 	initialMD={false}
 	initialCourse={true}

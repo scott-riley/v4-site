@@ -48,7 +48,7 @@
 			<div class="folder-item">
 				<div class="item-details">
 					<div class="item-icon">
-						<i class="fa-pixel fa-regular fa-file"></i>
+						<i class="fa-pixel fa-regular fa-link"></i>
 					</div>
 					<a
 						class="item-name"
