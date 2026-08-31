@@ -74,10 +74,6 @@
 		dragging = false;
 		e.currentTarget.releasePointerCapture(e.pointerId);
 	}
-
-	const closeClick = () => {
-		console.log('BYEEE');
-	};
 </script>
 
 <div

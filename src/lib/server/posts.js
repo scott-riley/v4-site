@@ -10,7 +10,6 @@ const postModules = import.meta.glob('/src/posts/*.md', {
 function parsePosts(modules) {
 	return Object.entries(modules).map(([path, raw]) => {
 		const { data, content } = matter(raw);
-		console.log('parsed frontmatter:', data);
 		const slug = path.split('/').pop().replace('.md', '');
 		return { slug, ...data, content };
 	});

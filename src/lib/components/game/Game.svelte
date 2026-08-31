@@ -281,7 +281,6 @@
 		messages = [];
 		if (isPlayerTurn && !enemyDead) {
 			const moveToUse = Math.floor(Math.random() * 3);
-			console.log('MOVE', moveToUse);
 			useMove(enemyMoves[moveToUse], 'player');
 			isPlayerTurn = false;
 			// canChooseMove = false;
