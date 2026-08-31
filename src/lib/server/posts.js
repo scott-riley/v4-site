@@ -35,3 +35,7 @@ const externalPostModules = import.meta.glob('/src/external-posts/*.md', {
 export function getAllExternalPosts() {
 	return parsePosts(externalPostModules).sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 }
+
+export function getExternalPostBySlug(slug) {
+	return getAllExternalPosts().find((p) => p.slug === slug) ?? null;
+}
