@@ -55,7 +55,7 @@
 	article {
 		font-family: 'Departure Mono', sans-serif;
 		.inner-content {
-			max-width: 70ch;
+			max-width: 60ch;
 			margin: auto;
 			@media (max-width: 900px) {
 				max-width: 90%;
