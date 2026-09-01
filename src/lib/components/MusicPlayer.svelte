@@ -87,11 +87,11 @@
 			z-index: 9999;
 			background: var(--color-text);
 			padding: var(--space-2xs) var(--space-3xs);
-			font-family: 'Silkscreen';
+			font-family: 'DepartureMono', monospace;
 			border: none;
 			color: var(--color-bg-accent);
 			pointer-events: none;
-			font-size: var(--step--1);
+			font-size: var(--step-pixel-0);
 			box-shadow:
 				0px 4px var(--color-text),
 				0px -4px var(--color-text),
@@ -131,8 +131,9 @@
 		margin-bottom: var(--space-xs);
 		cursor: pointer;
 		color: var(--color-text);
-		font-size: var(--step--1);
-		font-family: 'Geist Pixel', sans-serif;
+		font-size: var(--step-pixel--1);
+		font-family: 'DepartureMono', sans-serif;
+		letter-spacing: -0.3px;
 		:global(.miniPlayer) & {
 			display: none;
 		}

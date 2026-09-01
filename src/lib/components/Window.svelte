@@ -217,8 +217,8 @@
 				margin: 0;
 			}
 			:global p {
-				font-family: 'Geist Pixel', sans-serif;
-				font-size: Var(--step--1);
+				font-family: 'DepartureMono', sans-serif;
+				font-size: Var(--step-pixel-0);
 				margin: 0;
 				margin-top: var(--space-3xs);
 			}
@@ -268,7 +268,7 @@
 	}
 	header {
 		padding: 0 var(--space-2xs);
-		font-size: var(--step--1);
+		font-size: var(--step-pixel-0);
 		display: grid;
 		grid-template-columns: auto 1fr 20px;
 		justify-content: space-between;
@@ -281,6 +281,7 @@
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
+			font-size: var(--step-pixel--1);
 		}
 		.browserWindow &,
 		.post &,
@@ -343,6 +344,9 @@
 		text-decoration-color: var(--color-underline);
 		text-decoration-thickness: 2px;
 		font-style: italic;
+		&:hover {
+			color: var(--color-hover);
+		}
 	}
 	:global .window-content img {
 		width: 100%;
@@ -365,6 +369,6 @@
 	.window-footer {
 		border-top: 1px solid var(--color-border);
 		padding: var(--space-3xs);
-		font-size: var(--step--1);
+		font-size: var(--step-pixel--2);
 	}
 </style>

@@ -53,9 +53,9 @@
 		}
 	}
 	article {
-		font-family: 'Geist Pixel', sans-serif;
+		font-family: 'Pixel Operator', sans-serif;
 		.inner-content {
-			max-width: 60ch;
+			max-width: 70ch;
 			margin: auto;
 			@media (max-width: 900px) {
 				max-width: 90%;
@@ -96,8 +96,8 @@
 			}
 		}
 		:global p {
-			font-family: 'Geist Pixel', sans-serif;
-			font-size: var(--step-0);
+			font-family: 'DepartureMono', sans-serif;
+			font-size: var(--step-pixel-0);
 			letter-spacing: 0.2px;
 			line-height: 1.5;
 			sup {

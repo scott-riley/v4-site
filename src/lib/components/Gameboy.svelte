@@ -75,7 +75,7 @@
 			padding: 2px 12px;
 			border: 2px solid var(--color-text-muted);
 			border-radius: 99px;
-			font-size: var(--step--1);
+			font-size: var(--step-pixel-0);
 			opacity: 0.4;
 		}
 	}
@@ -140,7 +140,7 @@
 			color: var(--color-bg-accent);
 			aspect-ratio: 1/1;
 			border-radius: 999px;
-			font-family: 'Geist Pixel', sans-serif;
+			font-family: 'Pixel Operator', sans-serif;
 			font-size: 24px;
 			width: 44px;
 			height: 44px;

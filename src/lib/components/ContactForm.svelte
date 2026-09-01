@@ -61,7 +61,7 @@
 <style>
 	.top-line,
 	.form-actions {
-		font-size: var(--step--1);
+		font-size: var(--step-pixel-0);
 		padding: 0 var(--space-s);
 		border-bottom: 1px solid var(--color-border);
 		display: flex;
@@ -78,8 +78,8 @@
 			background: none;
 			border: none;
 			color: var(--color-text);
-			font-family: 'Geist Pixel', sans-serif;
-			font-size: var(--step--1);
+			font-family: 'Pixel Operator', sans-serif;
+			font-size: var(--step-pixel-0);
 		}
 		.inline-mail-field {
 			display: block;
@@ -96,7 +96,7 @@
 		width: 100%;
 		border: none;
 		color: var(--color-text);
-		font-size: var(--step-0);
+		font-size: var(--step-1);
 		font-family: 'Argent Pixel', serif;
 		font-weight: normal;
 		resize: vertical;
@@ -131,7 +131,7 @@
 		color: var(--color-bg-accent);
 		background: var(--color-text);
 		border: none;
-		font-size: var(--step--1);
+		font-size: var(--step-pixel-0);
 		font-weight: normal;
 		box-shadow:
 			0px 4px var(--color-text),

@@ -54,7 +54,7 @@
 				40 // speed
 			);
 		}
-		if (window.matchMedia('(min-width: 720px)').matches) {
+		if (window.matchMedia('(min-width: 740px)').matches) {
 			el.textContent = words[0];
 			setTimeout(next, 2000);
 		}
@@ -95,8 +95,10 @@
 		margin: 0;
 		margin-bottom: var(--space-s);
 		padding: 0;
-		overflow: hidden;
-		white-space: nowrap;
+		@media (min-width: 740px) {
+			overflow: hidden;
+			white-space: nowrap;
+		}
 	}
 	p {
 		margin-top: 0;

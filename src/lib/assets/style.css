@@ -12,6 +12,13 @@
 	font-style: italic;
 }
 
+@font-face {
+	font-family: 'DepartureMono';
+	src: url('/fonts/DepartureMono-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* @link https://utopia.fyi/type/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
 :root {
@@ -23,6 +30,9 @@
 	--step-3: clamp(1.944rem, 1.7405rem + 0.9044vw, 2.4414rem);
 	--step-4: clamp(2.3328rem, 2.0387rem + 1.3072vw, 3.0518rem);
 	--step-5: clamp(2.7994rem, 2.384rem + 1.8461vw, 3.8147rem);
+	--step-pixel--2: 12px;
+	--step-pixel--1: 14.5px;
+	--step-pixel-0: 16.5px;
 }
 
 /* @link https://utopia.fyi/space/calculator?c=360,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -58,6 +68,7 @@
 	--color-border: black;
 	--color-shadow-solid: rgba(0, 0, 0, 0.1);
 	--color-underline: rgba(0, 0, 0, 0.2);
+	--color-hover: #444;
 }
 
 :root[data-theme='dark'] {
@@ -68,6 +79,7 @@
 	--color-border: rgba(255, 255, 255, 0.2);
 	--color-shadow-solid: rgba(0, 0, 0, 0.3);
 	--color-underline: rgba(255, 255, 255, 0.4);
+	--color-hover: #accea9;
 }
 
 .text-document {
@@ -145,7 +157,7 @@ body {
 	font-kerning: normal;
 	font-variant-ligatures: common-ligatures contextual;
 	font-family: 'Argent Pixel', serif;
-	font-family: 'Geist Pixel', sans-serif;
+	font-family: 'DepartureMono', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-variation-settings: 'wdth' 100;
@@ -162,7 +174,13 @@ body {
 }
 
 p {
-	line-height: 1.45;
+	line-height: 1.4;
+}
+
+p,
+button {
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 button,
@@ -186,7 +204,7 @@ a {
 		border-top: 1px solid var(--color-border);
 		display: flex;
 		align-items: center;
-		font-size: var(--step--1);
+		font-size: var(--step-pixel--1);
 		&:first-child {
 			border-top: none;
 		}
@@ -196,7 +214,7 @@ a {
 			gap: var(--space-2xs);
 		}
 		h2 {
-			font-size: var(--step--1);
+			font-size: var(--step-pixel--1);
 			font-weight: normal;
 			margin: 0;
 			padding: 0;
@@ -206,6 +224,7 @@ a {
 		padding: var(--space-3xs);
 		.item-details,
 		.item-meta {
+			font-size: var(--step-pixel--1);
 			display: flex;
 			align-items: center;
 			gap: var(--space-2xs);
@@ -232,7 +251,7 @@ a {
 			}
 			& > * {
 				text-align: right;
-				width: 86px;
+				/*width: 86px;*/
 			}
 			.reversed & > * {
 				width: auto;
@@ -242,6 +261,7 @@ a {
 			}
 		}
 		.for {
+			font-size: var(--step-pixel--1);
 			@media (max-width: 900px) {
 				display: none;
 			}
@@ -250,7 +270,7 @@ a {
 			padding: var(--space-2xs);
 			display: flex;
 			gap: var(--space-xs);
-			font-size: var(--step--1);
+			font-size: var(--step-pixel-0);
 			justify-content: space-between;
 		}
 	}

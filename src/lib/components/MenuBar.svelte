@@ -54,7 +54,7 @@
 	.menubar {
 		border-bottom: 1px solid var(--color-border);
 		padding: var(--space-3xs) var(--space-m);
-		font-size: var(--step--1);
+		font-size: var(--step-pixel-0);
 		display: flex;
 		justify-content: space-between;
 		background: var(--color-bg-accent);
@@ -98,8 +98,8 @@
 		-webkit-appearance: none;
 		border: none;
 		background: transparent;
-		font-family: 'Geist Pixel', sans-serif;
-		font-size: var(--step--1);
+		font-family: 'Pixel Operator', sans-serif;
+		font-size: var(--step-pixel-0);
 		padding: var(--space-3xs) var(--space-2xs);
 		border-radius: 8px;
 		margin: 0;

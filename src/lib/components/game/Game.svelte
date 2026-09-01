@@ -570,7 +570,7 @@
 				padding: 2px 12px;
 				border: 2px solid var(--color-text-muted);
 				border-radius: 99px;
-				font-size: var(--step--1);
+				font-size: var(--step-pixel-0);
 			}
 		}
 	}
@@ -613,7 +613,7 @@
 			gap: 4px;
 			button {
 				background: none;
-				font-family: 'Geist Pixel', sans-serif;
+				font-family: 'DepartureMono', sans-serif;
 				text-transform: uppercase;
 				color: Var(--color-text);
 				text-align: left;

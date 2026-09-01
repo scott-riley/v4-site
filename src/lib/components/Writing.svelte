@@ -32,7 +32,6 @@
 				</div>
 				<div class="item-meta">
 					<span class="reading-time">{post.readingTime}</span>
-					<span class="item-date">{formatShortDate(post.pubDate)}{post.date}</span>
 				</div>
 			</div>
 		{/each}

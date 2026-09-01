@@ -8,6 +8,7 @@
 	import CoursePromo from '$lib/components/CoursePromo.svelte';
 	import ContactPromo from '$lib/components/ContactPromo.svelte';
 	import MusicPlayer from '$lib/components/MusicPlayer.svelte';
+	import Colophon from '$lib/components/Colophon.svelte';
 	import Gameboy from '$lib/components/Gameboy.svelte';
 	import HappyText from '$lib/components/icons/HappyText.svelte';
 	import ImageIcon from '$lib/components/icons/ImageIcon.svelte';
@@ -17,6 +18,7 @@
 	import LightsOn from '$lib/components/icons/LightsOn.svelte';
 	import Mail from '$lib/components/icons/Mail.svelte';
 	import Record from '$lib/components/icons/Record.svelte';
+	import CodeTerminal from '$lib/components/icons/CodeTerminal.svelte';
 
 	let {
 		initialAbout,
@@ -26,7 +28,8 @@
 		initialWriting,
 		initialCourse,
 		initialContact,
-		initialEmail
+		initialEmail,
+		initialColophon
 	} = $props();
 	let isPlaying = $state(false);
 	let showAbout = $state(initialAbout);
@@ -37,6 +40,7 @@
 	let showCoursePromo = $state(initialCourse);
 	let showContact = $state(initialContact);
 	let showEmailPromo = $state(initialEmail);
+	let showColophon = $state(initialColophon);
 
 	import { browser } from '$app/environment';
 
@@ -45,10 +49,10 @@
 	};
 
 	function getInitialTheme() {
-		if (!browser) return 'light';
+		if (!browser) return 'dark';
 		const stored = localStorage.getItem('theme');
 		if (stored) return stored;
-		return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+		return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'dark';
 	}
 
 	let theme = $state(getInitialTheme());
@@ -126,9 +130,9 @@
 					<Mail />
 					<span>say hi!</span>
 				</a>
-				<button class="desktop-icon" onclick={toggleGame}>
-					<Arcade />
-					<span>play!</span>
+				<button class="desktop-icon" onclick={() => (showColophon = true)}>
+					<CodeTerminal />
+					<span>colophon</span>
 				</button>
 				<button class="desktop-icon game-icon" onclick={() => (desktopState.showMusic = true)}>
 					<Record />
@@ -221,6 +225,18 @@
 			<img src="https://scott.is/scott-ascii.png" />
 		</Window>
 	{/if}
+	{#if showColophon}
+		<Window
+			filename="colophon.md"
+			initX={240}
+			initY={0}
+			large
+			post
+			onClose={() => (showColophon = false)}
+		>
+			<Colophon />
+		</Window>
+	{/if}
 	{#if showWriting}
 		<Window filename="writing" initX={140} initY={20} large onClose={() => (showWriting = false)}>
 			<About />
@@ -301,13 +317,13 @@
 		align-items: center;
 		background: none;
 		border: none;
-		font-family: 'Geist Pixel', sans-serif;
+		font-family: 'DepartureMono', sans-serif;
 		color: var(--color-text);
 		border-radius: 8px;
 		flex-grow: 0;
 		text-decoration: none;
 		span {
-			font-size: var(--step--1);
+			font-size: var(--step-pixel--1);
 		}
 		.icon {
 			font-size: 24px;
