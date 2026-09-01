@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { desktopState } from '../../shared.svelte.js';
+	import { desktopState, getNextZ } from '../../shared.svelte.js';
 	import Clippy from '$lib/components/icons/Clippy.svelte';
 	let {
 		filename,
@@ -23,6 +23,7 @@
 	} = $props();
 	let x = $state(initX);
 	let y = $state(initY);
+	let z = $state(0);
 	let dragging = $state(false);
 	let isMobile = $state(false);
 	let maximized = $state(false);
@@ -30,6 +31,10 @@
 	let windowEl;
 	const EDGE_MARGIN = 16;
 	const BOTTOM_MARGIN = 64;
+
+	function bringToFront() {
+		z = getNextZ();
+	}
 
 	function clampToViewport() {
 		if (!windowEl) return;
@@ -42,6 +47,7 @@
 	}
 
 	onMount(() => {
+		bringToFront();
 		clampToViewport();
 		window.addEventListener('resize', clampToViewport);
 		const mq = matchMedia('(max-width: 900px)');
@@ -52,6 +58,7 @@
 
 	function handlePointerDown(e) {
 		dragging = true;
+		bringToFront();
 		offset = { x: e.clientX - x, y: e.clientY - y };
 		e.currentTarget.setPointerCapture(e.pointerId);
 	}
@@ -91,7 +98,8 @@
 	class:player
 	class:maximized
 	class:miniPlayer
-	style={isMobile || maximized ? '' : `transform: translate3d(${x}px, ${y}px, 0);`}
+	onpointerdowncapture={bringToFront}
+	style={isMobile || maximized ? '' : `transform: translate3d(${x}px, ${y}px, 0); z-index: ${z}`}
 >
 	<header>
 		<div class="filename">
