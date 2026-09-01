@@ -78,7 +78,7 @@
 			background: none;
 			border: none;
 			color: var(--color-text);
-			font-family: 'Pixel Operator', sans-serif;
+			font-family: 'Departure Mono', sans-serif;
 			font-size: var(--step-pixel-0);
 		}
 		.inline-mail-field {
@@ -124,6 +124,10 @@
 		border-bottom: none;
 		display: flex;
 		justify-content: space-between;
+	}
+	.response,
+	.response span {
+		font-size: var(--step-pixel--1);
 	}
 	button[type='submit'] {
 		font-family: 'Silkscreen', sans-serif;

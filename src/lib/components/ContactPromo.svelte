@@ -1,9 +1,9 @@
 <div class="text-document">
 	<h2>It looks like you’re contacting a human.</h2>
 	<p>
-		If you prefer, you can always <a href="mailto:hugs@scott.is">email me</a> directly. If you just
-		wanna connect casually, you can follow me on
-		<a href="https://bsky.app/profile/scott.is">Bluesky</a> too.
+		If you prefer, you can always <a href="mailto:hugs@scott.is">email me</a> directly or follow me
+		on
+		<a href="https://bsky.app/profile/scott.is">Bluesky</a>.
 	</p>
 </div>
 

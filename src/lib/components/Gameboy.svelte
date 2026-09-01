@@ -140,7 +140,7 @@
 			color: var(--color-bg-accent);
 			aspect-ratio: 1/1;
 			border-radius: 999px;
-			font-family: 'Pixel Operator', sans-serif;
+			font-family: 'Departure Mono', sans-serif;
 			font-size: 24px;
 			width: 44px;
 			height: 44px;

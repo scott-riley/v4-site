@@ -98,7 +98,7 @@
 		-webkit-appearance: none;
 		border: none;
 		background: transparent;
-		font-family: 'Pixel Operator', sans-serif;
+		font-family: 'Departure Mono', sans-serif;
 		font-size: var(--step-pixel-0);
 		padding: var(--space-3xs) var(--space-2xs);
 		border-radius: 8px;

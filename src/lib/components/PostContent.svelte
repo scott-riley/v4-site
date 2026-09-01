@@ -53,7 +53,7 @@
 		}
 	}
 	article {
-		font-family: 'Pixel Operator', sans-serif;
+		font-family: 'Departure Mono', sans-serif;
 		.inner-content {
 			max-width: 70ch;
 			margin: auto;
