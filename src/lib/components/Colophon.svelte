@@ -1,3 +1,7 @@
+<script>
+	import { goto } from '$app/navigation';
+</script>
+
 <div class="about">
 	<div class="about-intro">
 		<h2>About this site</h2>
@@ -7,8 +11,9 @@
 			or you actually care about how this site was cobbled together.
 		</p>
 		<p>
-			If you’re so inclined, you can read a <a href="/writing/about/scott-v4"
-				>somewhat rambling post</a
+			If you’re so inclined, you can read a <a
+				href="/writing/about/scott-v4"
+				onclick={() => goto('/writing/about/scott-v4')}>somewhat rambling post</a
 			> about some of the motivations behind this site.
 		</p>
 		<h3>Technical</h3>
@@ -16,7 +21,8 @@
 			This site was designed directly in the browser, primarily using good old HTML and CSS. It is
 			built on
 			<a href="https://svelte.dev/">Svelte</a>, to which the highest complement I can pay is that it
-			most definitely is Not React.
+			most definitely is Not React. You can check out the
+			<a href="https://github.com/scott-riley/v4-site">source code</a> if you like.
 		</p>
 		<p>
 			The trickiest thing to get right was the window management. Fortunately, this is not an actual
@@ -29,22 +35,31 @@
 			Aside from the window management, having some form of routing and server-side rendering was
 			important, aping OS patterns doesn’t change the fact that this is still a website and basic
 			things like URLs should probably work. While windows are somewhat seamless, there’s still a
-			rough route structure for key pages like the writing and contact page. Most important things
-			should work with JS disabled, too. Which is nice.
+			rough route structure for key pages like the writing and contact page, so hitting those URLs
+			directly should still work. Most important things should work with JS disabled, too. Which is
+			nice.
 		</p>
 		<h3>Design</h3>
 		<p>
-			A website that looks like an operating system isn’t exactly unique. But it is fun. The whole
-			‘somewhat retro’ vibe comes from the pseudo–pixellated assets, for which I can take zero
-			credit. Connary Fagen’s <a href="https://connary.com/fonts/argent-pixel/">Argent Pixel</a> is
-			the heading font, and Helena Zhang’s <a href="https://departuremono.com/">Departure Mono</a> is
-			the body font. Silkscreen is used sparingly in CTAs.
+			A website that looks like an operating system <a
+				href="https://github.com/syxanash/awesome-web-desktops">isn’t exactly unique</a
+			>. But it is fun. The whole ‘somewhat retro’ vibe comes from the pseudo–pixellated assets, for
+			which I can take zero credit. Connary Fagen’s
+			<a href="https://connary.com/fonts/argent-pixel/">Argent Pixel</a>
+			is the heading font, and Helena Zhang’s
+			<a href="https://departuremono.com/">Departure Mono</a> is the body font. Silkscreen is used sparingly
+			in CTAs.
 		</p>
 		<p>
 			Smaller icons are from <a href="https://fontawesome.com/icons/packs/pixel"
 				>Font Awesome’s Pixel set</a
 			>. Larger icons are from
 			<a href="https://www.streamlinehq.com/icons/pixel">streamline’s free pixel icons set</a>.
+		</p>
+		<h3>Build in the open</h3>
+		<p>
+			This site isn’t finished, nor will it ever be. There’s undoubtedly rough edges, bugs, and bad
+			ideas everywhere you look. I don’t really care, and I’ll be continuously improving over time.
 		</p>
 	</div>
 </div>
