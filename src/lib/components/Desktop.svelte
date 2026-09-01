@@ -209,7 +209,7 @@
 			image
 			onClose={() => (showLorna = false)}
 		>
-			<img src="https://scott.is/lorna.png" />
+			<img src="/lorna.png" />
 		</Window>
 	{/if}
 	{#if showScott}
@@ -222,7 +222,7 @@
 			image
 			onClose={() => (showScott = false)}
 		>
-			<img src="https://scott.is/scott-ascii.png" />
+			<img src="/scott-ascii.png" />
 		</Window>
 	{/if}
 	{#if showColophon}
