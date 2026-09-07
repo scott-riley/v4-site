@@ -1,39 +1,39 @@
 <script>
 	const tracks = [
 		{
-			title: 'The Siren',
-			artist: 'Sophie Hunter',
-			youtubeId: 'AtNjDbxQZQI' // the video ID from the YouTube URL
+			title: '.De Dodenakker.',
+			artist: 'Amenra',
+			youtubeId: 'N5optqBoMSg' // the video ID from the YouTube URL
 		},
 		{
-			title: 'Adrift in the Ocean',
-			artist: 'YOB',
-			youtubeId: 'bEDqLArxyxg'
+			title: 'Damn Vegetables',
+			artist: 'dankmus',
+			youtubeId: 'fUt9xNqd5Lk'
 		},
 		{
-			title: 'La Perla',
-			artist: 'Rosalía',
-			youtubeId: 'w7pjt9ZH3NM'
+			title: 'Sour Breath',
+			artist: 'Julien Baker',
+			youtubeId: '2K7RBqA1ofQ'
 		},
 		{
-			title: 'Echolalia',
-			artist: 'Faetooth',
-			youtubeId: 'FlocUlOHj28'
+			title: 'Neoplastic',
+			artist: 'Immortal Bird',
+			youtubeId: 'hrRx_EpHy5k'
 		},
 		{
-			title: 'Devil is Fine',
-			artist: 'Zeal & Ardor',
-			youtubeId: 'tBikKucdtX8'
+			title: 'On The Dry Lake',
+			artist: 'hypno5e',
+			youtubeId: 'V5LwjHLq2wo'
 		},
 		{
-			title: 'Rosanna',
-			artist: 'Toto',
-			youtubeId: '3tWts0Nrceg'
+			title: 'Desert Rain',
+			artist: 'Brutus',
+			youtubeId: 'hbjM_zxjcus'
 		},
 		{
-			title: `L'Via L'Viaquez`,
-			artist: 'The Mars Volta',
-			youtubeId: 'WweLKsq0p4U'
+			title: `Churchyard`,
+			artist: 'Aurora',
+			youtubeId: 'dvnfXoCCSxc'
 		}
 	];
 
