@@ -76,8 +76,8 @@
 			of myself I have been able to plonk into the ether.
 		</p>
 		<p>
-			If you’re interested in working with me, you can visit my <a href="/professional"
-				>very professional one-pager</a
+			If you’re interested in working with me, you can visit my <a
+				href="https://professional.scott.is">very professional one-pager</a
 			>. If you want to follow me online you can find me on
 			<a href="https://bsky.app/profile/scott.is">Bluesky</a> until someone brings phpBB back.
 		</p>
