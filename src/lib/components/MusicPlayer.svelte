@@ -1,39 +1,39 @@
 <script>
 	const tracks = [
 		{
-			title: '.De Dodenakker.',
-			artist: 'Amenra',
-			youtubeId: 'N5optqBoMSg' // the video ID from the YouTube URL
+			title: 'Shot Caller',
+			artist: 'Stray From The Path',
+			youtubeId: 'p5gJaK8sNnI' // the video ID from the YouTube URL
 		},
 		{
-			title: 'Damn Vegetables',
-			artist: 'dankmus',
-			youtubeId: 'fUt9xNqd5Lk'
+			title: 'Handlebars',
+			artist: 'JENNIE & Dual Lipa',
+			youtubeId: 'qMmnoCjflmc'
 		},
 		{
-			title: 'Sour Breath',
-			artist: 'Julien Baker',
-			youtubeId: '2K7RBqA1ofQ'
+			title: 'Rituals',
+			artist: 'Rolo Tomassi',
+			youtubeId: 'pPELxUS6kdw'
 		},
 		{
-			title: 'Neoplastic',
-			artist: 'Immortal Bird',
-			youtubeId: 'hrRx_EpHy5k'
+			title: 'radiator',
+			artist: 'Sadurn',
+			youtubeId: 'B7XGEPPl45U'
 		},
 		{
-			title: 'On The Dry Lake',
-			artist: 'hypno5e',
-			youtubeId: 'V5LwjHLq2wo'
+			title: 'Embodiment',
+			artist: 'Carcass',
+			youtubeId: '4GXTw6CpZSo'
 		},
 		{
-			title: 'Desert Rain',
-			artist: 'Brutus',
-			youtubeId: 'hbjM_zxjcus'
+			title: 'Nomad',
+			artist: 'Pupil Slicer',
+			youtubeId: 'eAbOZB7lFQI'
 		},
 		{
 			title: `Churchyard`,
-			artist: 'Aurora',
-			youtubeId: 'dvnfXoCCSxc'
+			artist: 'Good Fine Alright',
+			youtubeId: 'fwwh9vgiq84'
 		}
 	];
 
