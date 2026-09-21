@@ -31,9 +31,9 @@
 			youtubeId: 'eAbOZB7lFQI'
 		},
 		{
-			title: `Good Fine Alright`,
+			title: `Diver`,
 			artist: 'Carly Rae Jepsen',
-			youtubeId: 'fwwh9vgiq84'
+			youtubeId: 'Cx_OhfuuHnM'
 		}
 	];
 
