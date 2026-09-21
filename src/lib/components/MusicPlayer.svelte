@@ -7,7 +7,7 @@
 		},
 		{
 			title: 'Handlebars',
-			artist: 'JENNIE & Dual Lipa',
+			artist: 'JENNIE & Dua Lipa',
 			youtubeId: 'qMmnoCjflmc'
 		},
 		{
