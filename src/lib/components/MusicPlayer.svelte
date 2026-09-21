@@ -31,8 +31,8 @@
 			youtubeId: 'eAbOZB7lFQI'
 		},
 		{
-			title: `Churchyard`,
-			artist: 'Good Fine Alright',
+			title: `Good Fine Alright`,
+			artist: 'Carly Rae Jepsen',
 			youtubeId: 'fwwh9vgiq84'
 		}
 	];
