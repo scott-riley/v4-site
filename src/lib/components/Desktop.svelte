@@ -38,7 +38,6 @@
 	let showMindfulDesign = $state(initialMD);
 	let showWriting = $state(initialWriting);
 	let showCoursePromo = $state(initialCourse);
-	let showContact = $state(initialContact);
 	let showEmailPromo = $state(initialEmail);
 	let showColophon = $state(initialColophon);
 
@@ -90,10 +89,6 @@
 					<span>writing</span>
 					<Book />
 				</a>
-				<a href="/chatting" class="desktop-icon" onclick={(e) => appNavigate('/chatting', e)}>
-					<span>say hi!</span>
-					<Mail />
-				</a>
 				<button class="desktop-icon game-icon" onclick={toggleGame}>
 					<span>play!</span>
 					<Arcade />
@@ -125,10 +120,6 @@
 				<a class="desktop-icon" href="/writing" onclick={(e) => appNavigate('/writing', e)}>
 					<Book />
 					<span>writing</span>
-				</a>
-				<a href="/chatting" class="desktop-icon" onclick={(e) => appNavigate('/chatting', e)}>
-					<Mail />
-					<span>say hi!</span>
 				</a>
 				<button class="desktop-icon" onclick={() => (showColophon = true)}>
 					<CodeTerminal />
