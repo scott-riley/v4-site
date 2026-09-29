@@ -324,13 +324,15 @@
 		<div class="credits">
 			<div class="header">
 				<h3 class="logo end-logo">
-					<span>f</span>
-					<span>U</span>
-					<span>c</span>
-					<span>k</span>
+					<span>s</span>
+					<span>L</span>
+					<span>o</span>
+					<span>P</span>
 					<span>&nbsp;</span>
-					<span>A</span>
-					<span>I</span>
+					<span>o</span>
+					<span>V</span>
+					<span>e</span>
+					<span>R</span>
 				</h3>
 				<p>A scottdotis production</p>
 			</div>
